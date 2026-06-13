@@ -1,0 +1,35 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "stock-of-the-day",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-05-23",
+  "compatibility_flags": ["nodejs_compat"],
+  "containers": [
+    {
+      "class_name": "StockContainer",
+      "image": "./Dockerfile",
+      "max_instances": 1,
+      "name": "stock-of-the-day-container"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "class_name": "StockContainer",
+        "name": "STOCK_CONTAINER"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "new_sqlite_classes": ["StockContainer"],
+      "tag": "v1"
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

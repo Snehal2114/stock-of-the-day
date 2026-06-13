@@ -1,0 +1,19 @@
+{
+  "name": "trmnl-stock-of-the-day",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cloudflare Container Worker that returns a deterministic 'stock of the day' per country, using yfinance.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260523.1",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.94.0"
+  },
+  "dependencies": {
+    "@cloudflare/containers": "^0.3.4"
+  }
+}

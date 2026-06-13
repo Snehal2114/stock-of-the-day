@@ -1,0 +1,16 @@
+# France (FR)
+# Count: 14
+AI.PA
+AIR.PA
+BNP.PA
+CS.PA
+DG.PA
+EL.PA
+KER.PA
+MC.PA
+OR.PA
+RMS.PA
+SAF.PA
+SAN.PA
+SU.PA
+TTE.PA
