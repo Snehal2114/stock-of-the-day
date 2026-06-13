@@ -7,6 +7,14 @@ day" for a given country, with data sourced from
 The pick is stable for a given `(country, UTC date)` pair: every call on the
 same day returns the same company, so it's safe to use for dashboards.
 
+---
+
+Currently Hosted endpoint
+
+---
+
+https://randomstock.pluginapi.xyz/stock-of-the-day?country=IN
+
 ## Architecture
 
 ```
